@@ -1,4 +1,6 @@
 class apt {
+	import "definitions/*.pp"
+
 	exec {
 		"apt-update":
 			command => "apt-get update",
