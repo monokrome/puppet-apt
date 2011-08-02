@@ -11,7 +11,7 @@ class apt {
 
 	exec {
 		"apt-upgrade":
-			command => "apt-get upgrade",
+			command => "apt-get -y upgrade",
 			subscribe => Exec["apt-update"],
 			refreshonly => true,
 			path => ["/sbin", "/bin",
